@@ -8,43 +8,33 @@ After cloning files from github repo i created a for loop to loop through each f
 ![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/40e78aea-5bdc-4bb1-a1be-f8217deb3b77)
 
 
-data_extraction
-
 In this above code we can see that in each step we go through the folders and we also setting the folder name as a value for dictionary.
 
-Now we want to repeat this process for all respective folders then we can get all the data in our desired format of csv.
+Now we want to repeat this process for all respective folders then we can get all the data in our desired format .
 
 After extracting the data we need to upload it into Mysql
-To insert datas into Mysql i used sqlalchemy(in order to establish connection you want pymysql also)
+To insert datas into Mysql i used mysql.connector .
 
-In order to insert csv to Mysql we need to establish connection to Mysql server
+In order to insert dataframes to Mysql we need to establish connection to Mysql server
 sql_connection
 
-After connection we need to create table then we can insert csv files to Mysql database
-sql_insert
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/4e8400a1-6665-4193-9a40-27812230268b)
 
-To see full code see in mysqlinsert.ipynb file Repeat the above process for all csv files to insert into your Mysql database
+After connection we need to create table then we can insert dataframes to Mysql database
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/bf555d7c-78d2-4e8d-b227-11ad41dc3a5b)
 
-Then after inserting all my files to Mysql database. I created a new file named main.py to create a app using streamlit.
+Then after inserting all dataframes to Mysql database. we Used the Streamlit and Plotly libraries in Python to create
+an interactive and visually appealing dashboard.
 
 My app preview
-appimage
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/a13bae08-373b-45b2-b910-3f987148c531)
 
-Geo-visualization of Transaction datas
-To see detailed code to use plotly for Geo visualization see main.py (Geo-visualization of transacion data section) geo visualization
+Data anlysis by brand
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/4b2cb143-a4f7-4298-9f91-03cb7c21066a)
 
-User device analysis od Phonepe data
-TREEMAP ANALYSIS
-userdevice
+Data anlysis registered users
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/356765e8-b2fc-4d91-90a1-f8632925f985)
 
-BAR CHART ANALYSIS
-user
+Data anlysis by top transcation
+![image](https://github.com/Nishayanbhar/PhonePe-Pulse-DataVisualization/assets/84184284/7af66222-dc8f-43af-b679-2b6df89e3cb1)
 
-Payment type analysis
-PIE CHART ANALYSIS
-paymentpie
-
-BAR CHART ANALYSIS
-paymentbar
-
-In side bar you can see overall India's data visualization for all datas.
